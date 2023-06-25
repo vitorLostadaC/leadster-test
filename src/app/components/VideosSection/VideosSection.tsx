@@ -3,11 +3,11 @@ import videosJSON from "./data/videos.json"
 import { CardVideo } from "./components/CardVideo/CardVideo"
 
 export const VideosSection = () => {
-  const videos: VideoSchema[] = videosJSON
+  const videos: VideoSchema[] = videosJSON.slice(0, 9)
 
   return (
-    <section>
-      <div>
+    <section className="mx-auto max-w-5xl">
+      <div className="grid max-w-5xl grid-cols-3 gap-5">
         {videos.map(({ id, thumbnail, title }) => (
           <CardVideo key={id} title={title} thumbnail={thumbnail} />
         ))}
