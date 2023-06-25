@@ -104,11 +104,13 @@ const contacts: ContactTextPropsSchema[] = [
 export const Footer = () => {
   return (
     <footer className="mx-auto flex max-w-5xl flex-col items-center py-6 text-sm">
+      {/* Logo */}
       <section>
         <Image src={leaderlogo} alt="Leader logo" className="" />
         <p className="mt-1 text-xs">Transformando visitantes em clientes.</p>
       </section>
 
+      {/* Links */}
       <section className="flex w-full justify-between">
         {groupsLinks.map((groupLink) => (
           <GroupLinks key={groupLink.groupName} {...groupLink} />
@@ -127,6 +129,20 @@ export const Footer = () => {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* Copyright */}
+      <section className="flex w-full justify-between text-gray-400">
+        <p>
+          Copyright © 2015 - 2022 Todos os direitos reservados |{" "}
+          <a href="" className="text-cyan-500">
+            Leadster
+          </a>
+        </p>
+        <p>
+          Rua José Loureiro, 464 - Centro - Curitiba PR - CEP: 80010-000 |
+          Termos de uso
+        </p>
       </section>
     </footer>
   )
