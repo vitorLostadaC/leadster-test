@@ -35,3 +35,7 @@ Claro que como é uma página simples com pouca estilização, acredito que não
 [next github example](https://github.com/vercel/app-playground/blob/main/app/styling/styled-components/page.tsx)
 
 [the cost of javascript in **2018**](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4)
+
+2. Header e Footer no arquivo layout
+
+Foi feito dessa forma pensando em escalabilidade, onde pode-se querer adicionar mais uma página a landing page e os componentes de header e footer iriam acompanhar as novas páginas.
