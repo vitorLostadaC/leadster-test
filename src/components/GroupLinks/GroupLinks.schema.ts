@@ -1,9 +1,9 @@
-export interface GroupLinksProps {
+export interface GroupLinksPropsSchema {
   groupName: string
-  links: GroupLink[]
+  links: GroupLinkSchema[]
 }
 
-export interface GroupLink {
+export interface GroupLinkSchema {
   name: string
   href: string
 }

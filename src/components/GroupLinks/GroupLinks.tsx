@@ -1,9 +1,9 @@
-import { GroupLinksProps } from "./GroupLinks.schema"
+import { GroupLinksPropsSchema } from "./GroupLinks.schema"
 
 /**
  * Render a title and below renders your links
  */
-export const GroupLinks = ({ groupName, links }: GroupLinksProps) => {
+export const GroupLinks = ({ groupName, links }: GroupLinksPropsSchema) => {
   return (
     <div>
       <h6 className="font-bold">{groupName}</h6>

@@ -1,6 +1,6 @@
 import leaderlogo from "@/assets/logo.png"
 import Image from "next/image"
-import { GroupLinksProps } from "../../components/GroupLinks/GroupLinks.schema"
+import { GroupLinksPropsSchema } from "../../components/GroupLinks/GroupLinks.schema"
 import { GroupLinks } from "@/components/GroupLinks/GroupLinks"
 import { Linkedin, Facebook, Instagram } from "lucide-react"
 import { ActionIconPropsSchema } from "@/components/ActionIcon/ActionIcon.schema"
@@ -9,7 +9,7 @@ import { ContactTextPropsSchema } from "./components/ContactText/ContactText.sch
 import { text } from "stream/consumers"
 import { ContactText } from "./components/ContactText/ContactText"
 
-const groupsLinks: GroupLinksProps[] = [
+const groupsLinks: GroupLinksPropsSchema[] = [
   {
     groupName: "Links Principais",
     links: [
