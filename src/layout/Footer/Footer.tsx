@@ -92,18 +92,18 @@ const socialMidias: ActionIconPropsSchema[] = [
 
 const contacts: ContactTextPropsSchema[] = [
   {
-    title: "E-mail:",
+    title: "E-mail",
     text: "contato@leadset.com.br"
   },
   {
-    title: "Telefone:",
+    title: "Telefone",
     text: "(42) 98828-9851"
   }
 ]
 
 export const Footer = () => {
   return (
-    <footer className="mx-auto flex max-w-5xl flex-col items-center py-6 text-sm">
+    <footer className="mx-auto flex w-full flex-col items-center gap-12 py-6 text-sm">
       {/* Logo */}
       <section>
         <Image src={leaderlogo} alt="Leader logo" className="" />
@@ -111,7 +111,7 @@ export const Footer = () => {
       </section>
 
       {/* Links */}
-      <section className="flex w-full justify-between">
+      <section className="flex w-full max-w-5xl justify-between">
         {groupsLinks.map((groupLink) => (
           <GroupLinks key={groupLink.groupName} {...groupLink} />
         ))}
@@ -123,7 +123,7 @@ export const Footer = () => {
               <ActionIcon key={socialMedia.link} {...socialMedia} />
             ))}
           </div>
-          <div className="font-xs">
+          <div className="font-xs flex flex-col gap-1">
             {contacts.map((contact) => (
               <ContactText key={contact.title} {...contact} />
             ))}
@@ -132,17 +132,20 @@ export const Footer = () => {
       </section>
 
       {/* Copyright */}
-      <section className="flex w-full justify-between text-gray-400">
-        <p>
-          Copyright © 2015 - 2022 Todos os direitos reservados |{" "}
-          <a href="" className="text-cyan-500">
-            Leadster
-          </a>
-        </p>
-        <p>
-          Rua José Loureiro, 464 - Centro - Curitiba PR - CEP: 80010-000 |
-          Termos de uso
-        </p>
+      <section className="w-full text-gray-400">
+        <hr className="mb-6 w-full" />
+        <div className="mx-auto flex max-w-5xl items-center justify-between">
+          <p>
+            Copyright © 2015 - 2022 Todos os direitos reservados |{" "}
+            <a href="" className="text-cyan-500">
+              Leadster
+            </a>
+          </p>
+          <p>
+            Rua José Loureiro, 464 - Centro - Curitiba PR - CEP: 80010-000 |
+            Termos de uso
+          </p>
+        </div>
       </section>
     </footer>
   )
