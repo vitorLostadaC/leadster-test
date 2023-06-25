@@ -1,3 +1,9 @@
+import { SloganSection } from "./components/SloganSection/SloganSection"
+
 export default function Home() {
-  return <main>main</main>
+  return (
+    <main>
+      <SloganSection />
+    </main>
+  )
 }
