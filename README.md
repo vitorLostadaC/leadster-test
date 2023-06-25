@@ -36,6 +36,10 @@ Claro que como é uma página simples com pouca estilização, acredito que não
 
 [the cost of javascript in **2018**](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4)
 
-2. Header e Footer no arquivo layout
+2. Modelo de construção da página
+
+Normalmente quando vou realizar a construção de uam página responsiva utilizo a convecção ´mobile first´ mas como só foi disponibilizado a versão web, irei primeiro fazer a versão web e depois adaptar oq eu achar necessário para os outros tamanhos de tela.
+
+3. Header e Footer no arquivo layout
 
 Foi feito dessa forma pensando em escalabilidade, onde pode-se querer adicionar mais uma página a landing page e os componentes de header e footer iriam acompanhar as novas páginas.
