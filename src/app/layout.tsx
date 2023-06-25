@@ -1,3 +1,4 @@
+import { Header } from "@/layout/Header/Header"
 import "./globals.css"
 import { Plus_Jakarta_Sans as PlusJakartaSans } from "next/font/google"
 
@@ -18,7 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={plusJakartaSans.className}>{children}</body>
+      <body className={plusJakartaSans.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
