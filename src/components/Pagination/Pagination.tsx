@@ -1,15 +1,18 @@
-import { Box, Text, Stack } from "@chakra-ui/react"
 import { PaginationItem } from "./PaginationItem"
 
-interface PaginationProps {
-  totalCountOfRegisters: number
-  registersPerPage?: number
+interface PaginationPropsSchema {
+  totalNumberPages: number
+  quantityItemsPerPage?: number
   currentPage?: number
   onPageChange: (page: number) => void
 }
 
 const SIBLINGS_COUNT = 1
 
+/**
+ * return interval pages
+ * @example generatePagesArray(2, 6) = [3, 4, 5, 6]
+ */
 function generatePagesArray(from: number, to: number) {
   return [...new Array(to - from)]
     .map((_, index) => {
@@ -19,12 +22,12 @@ function generatePagesArray(from: number, to: number) {
 }
 
 export function Pagination({
-  totalCountOfRegisters,
+  totalNumberPages,
   currentPage = 1,
   onPageChange,
-  registersPerPage = 10
-}: PaginationProps) {
-  const lastPage = Math.floor(totalCountOfRegisters / registersPerPage)
+  quantityItemsPerPage = 10
+}: PaginationPropsSchema) {
+  const lastPage = Math.floor(totalNumberPages / quantityItemsPerPage)
 
   const previousPages =
     currentPage > 1
@@ -40,65 +43,48 @@ export function Pagination({
       : []
 
   return (
-    <Stack
-      direction={["column", "row"]}
-      mt="8"
-      justify="space-between"
-      align="center"
-      spacing="6"
-    >
-      <Box>
-        <strong>0</strong> - <strong>10</strong> de <strong>100</strong>
-      </Box>
-      <Stack direction="row" spacing="2">
-        {currentPage > 1 + SIBLINGS_COUNT && (
-          <>
-            <PaginationItem onPageChange={onPageChange} number={1} />
-            {currentPage > 2 + SIBLINGS_COUNT && (
-              <Text color="gray.300" width="6" textAlign="center">
-                {" "}
-                ...
-              </Text>
-            )}
-          </>
-        )}
+    <div className="flex gap-2">
+      {currentPage > 1 + SIBLINGS_COUNT && (
+        <>
+          <PaginationItem selectPage={onPageChange} pageNumber={1} />
+          {currentPage > 2 + SIBLINGS_COUNT && (
+            <p className="text-gray-300"> ...</p>
+          )}
+        </>
+      )}
 
-        {previousPages.length > 0 &&
-          previousPages.map((page) => (
-            <PaginationItem
-              onPageChange={onPageChange}
-              key={page}
-              number={page}
-            />
-          ))}
+      {previousPages.length > 0 &&
+        previousPages.map((page) => (
+          <PaginationItem
+            selectPage={onPageChange}
+            key={page}
+            pageNumber={page}
+          />
+        ))}
 
-        <PaginationItem
-          onPageChange={onPageChange}
-          number={currentPage}
-          isCurrent
-        />
+      <PaginationItem
+        selectPage={onPageChange}
+        pageNumber={currentPage}
+        isSelected
+      />
 
-        {nextPages.length > 0 &&
-          nextPages.map((page) => (
-            <PaginationItem
-              onPageChange={onPageChange}
-              key={page}
-              number={page}
-            />
-          ))}
+      {nextPages.length > 0 &&
+        nextPages.map((page) => (
+          <PaginationItem
+            selectPage={onPageChange}
+            key={page}
+            pageNumber={page}
+          />
+        ))}
 
-        {currentPage + SIBLINGS_COUNT < lastPage && (
-          <>
-            {currentPage + 1 + SIBLINGS_COUNT < lastPage && (
-              <Text color="gray.300" width="6" textAlign="center">
-                {" "}
-                ...
-              </Text>
-            )}
-            <PaginationItem onPageChange={onPageChange} number={lastPage} />
-          </>
-        )}
-      </Stack>
-    </Stack>
+      {currentPage + SIBLINGS_COUNT < lastPage && (
+        <>
+          {currentPage + 1 + SIBLINGS_COUNT < lastPage && (
+            <p className="text-gray-300"> ...</p>
+          )}
+          <PaginationItem selectPage={onPageChange} pageNumber={lastPage} />
+        </>
+      )}
+    </div>
   )
 }
