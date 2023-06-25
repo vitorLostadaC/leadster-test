@@ -1,8 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Iniciando projeto
 
-## Getting Started
+baixe as dependencias
 
-First, run the development server:
+```bash
+npm install
+# or
+yarn
+# or
+pnpm install
+```
 
 ```bash
 npm run dev
@@ -12,23 +18,20 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Desisões de projeto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Estilizacao
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Foi proposto utilizar styled-components mas vendo a documentação com o next 13, percenbi que ainda não está maduro o suficiente para utilizar criar as estilizacões utilizando SSR, apenas renderizando em `client side`.
 
-## Learn More
+Visto que a empresa Leadster é uma solução de marketing, acredito que um grande critério seja as landing pages terem um carregamento rápido, tendo em vista que alguns segundos de diferença geram grandes resultados no numero de vendas.
 
-To learn more about Next.js, take a look at the following resources:
+Claro que como é uma página simples com pouca estilização, acredito que não terá tanto impacto na performance mas mesmo assim preferi gerar com tailwind para ter a possibilidade de já deixar as páginas estaticas e ganhar alguns milésimos de segundos ou segundos no carregamento das páginas.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Refêrencias das informacões**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[next documentation](https://nextjs.org/docs/app/building-your-application/styling/css-in-js#styled-components)
 
-## Deploy on Vercel
+[next github example](https://github.com/vercel/app-playground/blob/main/app/styling/styled-components/page.tsx)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[the cost of javascript in **2018**](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4)
