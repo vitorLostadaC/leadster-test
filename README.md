@@ -43,3 +43,7 @@ Normalmente quando vou realizar a construção de uam página responsiva utilizo
 3. Header e Footer no arquivo layout
 
 Foi feito dessa forma pensando em escalabilidade, onde pode-se querer adicionar mais uma página a landing page e os componentes de header e footer iriam acompanhar as novas páginas.
+
+4. utilizar uma thumbanilFake
+
+Para simular uma api no json tem o campo thumbnail que esta sem um link valido, e para este projeto está sendo importado uma fake para ficar congruente com o mockup
