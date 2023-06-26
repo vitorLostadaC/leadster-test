@@ -63,3 +63,7 @@ Está sendo feito desta maneira apenas para podermos validar as funcionalidades 
 8. Categoria de midia paga com nomes alterados
 
 Os cards do midia paga estão com seus nomes alterados para poder testar a ordenação.
+
+9. Modal
+
+O modal por não ter muitas imagens para me basear e tentar achar um padrão, acabou que o componente não ficou muito opnativo com relação a padronização dos modais
