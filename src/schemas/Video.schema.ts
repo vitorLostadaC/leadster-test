@@ -13,3 +13,8 @@ export interface VideoSchema {
     zip?: string
   }
 }
+
+export interface modalVideoParamsSchema {
+  open: boolean
+  currentVideoId: null | string
+}
