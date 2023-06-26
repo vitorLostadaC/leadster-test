@@ -150,7 +150,7 @@ export const VideosSection = () => {
 
         <hr className="h-[2px] border-none bg-gray-200" />
         {/* Cards */}
-        <div className="grid min-h-[850px] max-w-5xl grid-cols-3 gap-5">
+        <div className="grid min-h-[850px] max-w-5xl grid-cols-3 grid-rows-3 gap-5">
           {videos.map((video) => (
             <CardVideo
               key={video.id}
