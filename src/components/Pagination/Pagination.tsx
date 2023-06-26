@@ -1,33 +1,23 @@
-import { PaginationItem } from "./PaginationItem"
-
-interface PaginationPropsSchema {
-  totalNumberPages: number
-  quantityItemsPerPage?: number
-  currentPage?: number
-  onPageChange: (page: number) => void
-}
-
-const SIBLINGS_COUNT = 1
+import { PaginationPropsSchema } from "./Pagination.chema"
+import { PaginationItem } from "./components/PaginationItem/PaginationItem"
+import { generatePagesArray } from "./utils/utils"
 
 /**
- * return interval pages
- * @example generatePagesArray(2, 6) = [3, 4, 5, 6]
+ * Quantity siblings renders
+ * @example
+ * 1 being the current page
+ * SIBLINGS_COUNT = 2 => 1 `2` `3` ... 10
+ * SIBLINGS_COUNT = 1 => 1 `2` ... 10
  */
-function generatePagesArray(from: number, to: number) {
-  return [...new Array(to - from)]
-    .map((_, index) => {
-      return from + index + 1
-    })
-    .filter((page) => page > 0)
-}
+const SIBLINGS_COUNT = 1
 
 export function Pagination({
-  totalNumberPages,
-  currentPage = 1,
+  totalItems,
+  currentPage,
   onPageChange,
-  quantityItemsPerPage = 10
+  quantityItemsPerPage
 }: PaginationPropsSchema) {
-  const lastPage = Math.floor(totalNumberPages / quantityItemsPerPage)
+  const lastPage = Math.floor(totalItems / quantityItemsPerPage)
 
   const previousPages =
     currentPage > 1
@@ -44,15 +34,13 @@ export function Pagination({
 
   return (
     <div className="flex gap-2">
+      Página
       {currentPage > 1 + SIBLINGS_COUNT && (
         <>
           <PaginationItem selectPage={onPageChange} pageNumber={1} />
-          {currentPage > 2 + SIBLINGS_COUNT && (
-            <p className="text-gray-300"> ...</p>
-          )}
+          {currentPage > 2 + SIBLINGS_COUNT && <p> ...</p>}
         </>
       )}
-
       {previousPages.length > 0 &&
         previousPages.map((page) => (
           <PaginationItem
@@ -61,13 +49,11 @@ export function Pagination({
             pageNumber={page}
           />
         ))}
-
       <PaginationItem
         selectPage={onPageChange}
         pageNumber={currentPage}
         isSelected
       />
-
       {nextPages.length > 0 &&
         nextPages.map((page) => (
           <PaginationItem
@@ -76,12 +62,9 @@ export function Pagination({
             pageNumber={page}
           />
         ))}
-
       {currentPage + SIBLINGS_COUNT < lastPage && (
         <>
-          {currentPage + 1 + SIBLINGS_COUNT < lastPage && (
-            <p className="text-gray-300"> ...</p>
-          )}
+          {currentPage + 1 + SIBLINGS_COUNT < lastPage && <p> ...</p>}
           <PaginationItem selectPage={onPageChange} pageNumber={lastPage} />
         </>
       )}
