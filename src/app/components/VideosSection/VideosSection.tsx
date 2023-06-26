@@ -99,7 +99,7 @@ export const VideosSection = () => {
         </div>
         {/* Order */}
         <div>
-          <label className="mr-3" htmlFor="order">
+          <label className="mr-3 font-bold" htmlFor="order">
             Ordenar por
           </label>
           <select

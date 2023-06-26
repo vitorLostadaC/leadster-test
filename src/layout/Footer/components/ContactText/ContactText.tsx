@@ -7,7 +7,7 @@ import { ContactTextPropsSchema } from "./ContactText.schema"
 export const ContactText = ({ title, text }: ContactTextPropsSchema) => {
   return (
     <p>
-      {title}:<span className="text-gray-400">{text}</span>
+      {title}: <span className="text-gray-400">{text}</span>
     </p>
   )
 }

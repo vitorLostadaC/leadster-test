@@ -19,10 +19,8 @@ export const SloganSection = () => {
       <hr className="h-[1px] w-full max-w-xl border-none bg-gray-300" />
       <p>
         Conheça as estratégias que{" "}
-        <span className="text-xs font-bold">
-          mudaram o jogo e como aplicá-las
-        </span>{" "}
-        no seu negócio
+        <span className="font-bold">mudaram o jogo</span> e como aplicá-las no
+        seu negócio
       </p>
     </section>
   )

@@ -24,7 +24,7 @@ export const DemonstrationSection = () => {
         <hr className="border-node h-[2px] bg-gray-400" />
 
         <div className="flex items-center gap-4">
-          <button className="rounded-full bg-primary-400 px-5 py-3 text-white">
+          <button className="rounded-full bg-primary-400 px-7 py-3 text-white">
             Ver demonstração
           </button>
           <Image src={stampRD} alt="Estampa" className="h-12 w-auto" />

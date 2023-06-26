@@ -34,7 +34,7 @@ export function Pagination({
 
   return (
     <div className="flex gap-2">
-      Página
+      <p className="font-bold">Página</p>
       {currentPage > 1 + SIBLINGS_COUNT && (
         <>
           <PaginationItem selectPage={onPageChange} pageNumber={1} />

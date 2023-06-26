@@ -6,7 +6,6 @@ import { Linkedin, Facebook, Instagram } from "lucide-react"
 import { ActionIconPropsSchema } from "@/components/ActionIcon/ActionIcon.schema"
 import { ActionIcon } from "@/components/ActionIcon/ActionIcon"
 import { ContactTextPropsSchema } from "./components/ContactText/ContactText.schema"
-import { text } from "stream/consumers"
 import { ContactText } from "./components/ContactText/ContactText"
 
 const groupsLinks: GroupLinksPropsSchema[] = [
