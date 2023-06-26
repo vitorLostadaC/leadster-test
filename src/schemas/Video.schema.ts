@@ -7,14 +7,20 @@ export interface VideoSchema {
   thumbnail: string
   category: string
   donwloads: {
-    xls?: string
-    doc?: string
-    ppt?: string
-    zip?: string
+    xls?: DownloadSchema
+    doc?: DownloadSchema
+    ppt?: DownloadSchema
+    zip?: DownloadSchema
   }
 }
 
 export interface modalVideoParamsSchema {
   open: boolean
   currentVideoId: null | string
+}
+
+export interface DownloadSchema {
+  url: string
+  name: string
+  color: string
 }

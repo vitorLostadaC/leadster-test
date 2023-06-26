@@ -8,9 +8,21 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "doc": "linkdownload.com",
-      "ppt": "linkdownload.com",
-      "zip": "linkdownload.com"
+      "doc": {
+        "url": "http://linkdownload.com",
+        "name": "Document.doc",
+        "color": "#c2e6ff"
+      },
+      "ppt": {
+        "url": "http://linkdownload.com",
+        "name": "Presentation.ppt",
+        "color": "#fff8d0"
+      },
+      "zip": {
+        "url": "http://linkdownload.com",
+        "name": "Folder.zip",
+        "color": "#e8eef3"
+      }
     }
   },
   {
@@ -22,10 +34,22 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "xls": "linkdownload.com",
+      "xls": {
+        "url": "http://linkdownload.com",
+        "name": "Spreadsheet.xls",
+        "color": "#c2f4ea"
+      },
 
-      "ppt": "linkdownload.com",
-      "zip": "linkdownload.com"
+      "ppt": {
+        "url": "http://linkdownload.com",
+        "name": "Presentation.ppt",
+        "color": "#fff8d0"
+      },
+      "zip": {
+        "url": "http://linkdownload.com",
+        "name": "Folder.zip",
+        "color": "#e8eef3"
+      }
     }
   },
   {
@@ -37,10 +61,22 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "xls": "linkdownload.com",
-      "doc": "linkdownload.com",
+      "xls": {
+        "url": "http://linkdownload.com",
+        "name": "Spreadsheet.xls",
+        "color": "#c2f4ea"
+      },
+      "doc": {
+        "url": "http://linkdownload.com",
+        "name": "Document.doc",
+        "color": "#c2e6ff"
+      },
 
-      "zip": "linkdownload.com"
+      "zip": {
+        "url": "http://linkdownload.com",
+        "name": "Folder.zip",
+        "color": "#e8eef3"
+      }
     }
   },
   {
@@ -52,9 +88,21 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "xls": "linkdownload.com",
-      "doc": "linkdownload.com",
-      "ppt": "linkdownload.com"
+      "xls": {
+        "url": "http://linkdownload.com",
+        "name": "Spreadsheet.xls",
+        "color": "#c2f4ea"
+      },
+      "doc": {
+        "url": "http://linkdownload.com",
+        "name": "Document.doc",
+        "color": "#c2e6ff"
+      },
+      "ppt": {
+        "url": "http://linkdownload.com",
+        "name": "Presentation.ppt",
+        "color": "#fff8d0"
+      }
     }
   },
   {
@@ -66,9 +114,21 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "doc": "linkdownload.com",
-      "ppt": "linkdownload.com",
-      "zip": "linkdownload.com"
+      "doc": {
+        "url": "http://linkdownload.com",
+        "name": "Document.doc",
+        "color": "#c2e6ff"
+      },
+      "ppt": {
+        "url": "http://linkdownload.com",
+        "name": "Presentation.ppt",
+        "color": "#fff8d0"
+      },
+      "zip": {
+        "url": "http://linkdownload.com",
+        "name": "Folder.zip",
+        "color": "#e8eef3"
+      }
     }
   },
   {
@@ -80,10 +140,22 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "xls": "linkdownload.com",
+      "xls": {
+        "url": "http://linkdownload.com",
+        "name": "Spreadsheet.xls",
+        "color": "#c2f4ea"
+      },
 
-      "ppt": "linkdownload.com",
-      "zip": "linkdownload.com"
+      "ppt": {
+        "url": "http://linkdownload.com",
+        "name": "Presentation.ppt",
+        "color": "#fff8d0"
+      },
+      "zip": {
+        "url": "http://linkdownload.com",
+        "name": "Folder.zip",
+        "color": "#e8eef3"
+      }
     }
   },
   {
@@ -95,10 +167,22 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "xls": "linkdownload.com",
-      "doc": "linkdownload.com",
+      "xls": {
+        "url": "http://linkdownload.com",
+        "name": "Spreadsheet.xls",
+        "color": "#c2f4ea"
+      },
+      "doc": {
+        "url": "http://linkdownload.com",
+        "name": "Document.doc",
+        "color": "#c2e6ff"
+      },
 
-      "zip": "linkdownload.com"
+      "zip": {
+        "url": "http://linkdownload.com",
+        "name": "Folder.zip",
+        "color": "#e8eef3"
+      }
     }
   },
   {
@@ -110,9 +194,21 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "xls": "linkdownload.com",
-      "doc": "linkdownload.com",
-      "ppt": "linkdownload.com"
+      "xls": {
+        "url": "http://linkdownload.com",
+        "name": "Spreadsheet.xls",
+        "color": "#c2f4ea"
+      },
+      "doc": {
+        "url": "http://linkdownload.com",
+        "name": "Document.doc",
+        "color": "#c2e6ff"
+      },
+      "ppt": {
+        "url": "http://linkdownload.com",
+        "name": "Presentation.ppt",
+        "color": "#fff8d0"
+      }
     }
   },
   {
@@ -124,9 +220,21 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "doc": "linkdownload.com",
-      "ppt": "linkdownload.com",
-      "zip": "linkdownload.com"
+      "doc": {
+        "url": "http://linkdownload.com",
+        "name": "Document.doc",
+        "color": "#c2e6ff"
+      },
+      "ppt": {
+        "url": "http://linkdownload.com",
+        "name": "Presentation.ppt",
+        "color": "#fff8d0"
+      },
+      "zip": {
+        "url": "http://linkdownload.com",
+        "name": "Folder.zip",
+        "color": "#e8eef3"
+      }
     }
   },
   {
@@ -138,10 +246,22 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "xls": "linkdownload.com",
+      "xls": {
+        "url": "http://linkdownload.com",
+        "name": "Spreadsheet.xls",
+        "color": "#c2f4ea"
+      },
 
-      "ppt": "linkdownload.com",
-      "zip": "linkdownload.com"
+      "ppt": {
+        "url": "http://linkdownload.com",
+        "name": "Presentation.ppt",
+        "color": "#fff8d0"
+      },
+      "zip": {
+        "url": "http://linkdownload.com",
+        "name": "Folder.zip",
+        "color": "#e8eef3"
+      }
     }
   },
   {
@@ -153,10 +273,22 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "xls": "linkdownload.com",
-      "doc": "linkdownload.com",
+      "xls": {
+        "url": "http://linkdownload.com",
+        "name": "Spreadsheet.xls",
+        "color": "#c2f4ea"
+      },
+      "doc": {
+        "url": "http://linkdownload.com",
+        "name": "Document.doc",
+        "color": "#c2e6ff"
+      },
 
-      "zip": "linkdownload.com"
+      "zip": {
+        "url": "http://linkdownload.com",
+        "name": "Folder.zip",
+        "color": "#e8eef3"
+      }
     }
   },
   {
@@ -168,9 +300,21 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "xls": "linkdownload.com",
-      "doc": "linkdownload.com",
-      "ppt": "linkdownload.com"
+      "xls": {
+        "url": "http://linkdownload.com",
+        "name": "Spreadsheet.xls",
+        "color": "#c2f4ea"
+      },
+      "doc": {
+        "url": "http://linkdownload.com",
+        "name": "Document.doc",
+        "color": "#c2e6ff"
+      },
+      "ppt": {
+        "url": "http://linkdownload.com",
+        "name": "Presentation.ppt",
+        "color": "#fff8d0"
+      }
     }
   },
   {
@@ -182,9 +326,17 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "doc": "linkdownload.com",
+      "doc": {
+        "url": "http://linkdownload.com",
+        "name": "Document.doc",
+        "color": "#c2e6ff"
+      },
 
-      "zip": "linkdownload.com"
+      "zip": {
+        "url": "http://linkdownload.com",
+        "name": "Folder.zip",
+        "color": "#e8eef3"
+      }
     }
   },
   {
@@ -196,10 +348,22 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "xls": "linkdownload.com",
-      "doc": "linkdownload.com",
+      "xls": {
+        "url": "http://linkdownload.com",
+        "name": "Spreadsheet.xls",
+        "color": "#c2f4ea"
+      },
+      "doc": {
+        "url": "http://linkdownload.com",
+        "name": "Document.doc",
+        "color": "#c2e6ff"
+      },
 
-      "zip": "linkdownload.com"
+      "zip": {
+        "url": "http://linkdownload.com",
+        "name": "Folder.zip",
+        "color": "#e8eef3"
+      }
     }
   },
   {
@@ -211,9 +375,21 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "xls": "linkdownload.com",
-      "doc": "linkdownload.com",
-      "ppt": "linkdownload.com"
+      "xls": {
+        "url": "http://linkdownload.com",
+        "name": "Spreadsheet.xls",
+        "color": "#c2f4ea"
+      },
+      "doc": {
+        "url": "http://linkdownload.com",
+        "name": "Document.doc",
+        "color": "#c2e6ff"
+      },
+      "ppt": {
+        "url": "http://linkdownload.com",
+        "name": "Presentation.ppt",
+        "color": "#fff8d0"
+      }
     }
   },
   {
@@ -225,9 +401,21 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "doc": "linkdownload.com",
-      "ppt": "linkdownload.com",
-      "zip": "linkdownload.com"
+      "doc": {
+        "url": "http://linkdownload.com",
+        "name": "Document.doc",
+        "color": "#c2e6ff"
+      },
+      "ppt": {
+        "url": "http://linkdownload.com",
+        "name": "Presentation.ppt",
+        "color": "#fff8d0"
+      },
+      "zip": {
+        "url": "http://linkdownload.com",
+        "name": "Folder.zip",
+        "color": "#e8eef3"
+      }
     }
   },
   {
@@ -239,10 +427,22 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "xls": "linkdownload.com",
+      "xls": {
+        "url": "http://linkdownload.com",
+        "name": "Spreadsheet.xls",
+        "color": "#c2f4ea"
+      },
 
-      "ppt": "linkdownload.com",
-      "zip": "linkdownload.com"
+      "ppt": {
+        "url": "http://linkdownload.com",
+        "name": "Presentation.ppt",
+        "color": "#fff8d0"
+      },
+      "zip": {
+        "url": "http://linkdownload.com",
+        "name": "Folder.zip",
+        "color": "#e8eef3"
+      }
     }
   },
   {
@@ -254,10 +454,22 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "xls": "linkdownload.com",
-      "doc": "linkdownload.com",
+      "xls": {
+        "url": "http://linkdownload.com",
+        "name": "Spreadsheet.xls",
+        "color": "#c2f4ea"
+      },
+      "doc": {
+        "url": "http://linkdownload.com",
+        "name": "Document.doc",
+        "color": "#c2e6ff"
+      },
 
-      "zip": "linkdownload.com"
+      "zip": {
+        "url": "http://linkdownload.com",
+        "name": "Folder.zip",
+        "color": "#e8eef3"
+      }
     }
   },
   {
@@ -269,9 +481,21 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "xls": "linkdownload.com",
-      "doc": "linkdownload.com",
-      "ppt": "linkdownload.com"
+      "xls": {
+        "url": "http://linkdownload.com",
+        "name": "Spreadsheet.xls",
+        "color": "#c2f4ea"
+      },
+      "doc": {
+        "url": "http://linkdownload.com",
+        "name": "Document.doc",
+        "color": "#c2e6ff"
+      },
+      "ppt": {
+        "url": "http://linkdownload.com",
+        "name": "Presentation.ppt",
+        "color": "#fff8d0"
+      }
     }
   },
   {
@@ -283,9 +507,21 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "doc": "linkdownload.com",
-      "ppt": "linkdownload.com",
-      "zip": "linkdownload.com"
+      "doc": {
+        "url": "http://linkdownload.com",
+        "name": "Document.doc",
+        "color": "#c2e6ff"
+      },
+      "ppt": {
+        "url": "http://linkdownload.com",
+        "name": "Presentation.ppt",
+        "color": "#fff8d0"
+      },
+      "zip": {
+        "url": "http://linkdownload.com",
+        "name": "Folder.zip",
+        "color": "#e8eef3"
+      }
     }
   },
   {
@@ -297,10 +533,22 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "xls": "linkdownload.com",
+      "xls": {
+        "url": "http://linkdownload.com",
+        "name": "Spreadsheet.xls",
+        "color": "#c2f4ea"
+      },
 
-      "ppt": "linkdownload.com",
-      "zip": "linkdownload.com"
+      "ppt": {
+        "url": "http://linkdownload.com",
+        "name": "Presentation.ppt",
+        "color": "#fff8d0"
+      },
+      "zip": {
+        "url": "http://linkdownload.com",
+        "name": "Folder.zip",
+        "color": "#e8eef3"
+      }
     }
   },
   {
@@ -312,10 +560,26 @@
     "url": "https://www.youtube.com/embed/0hvoYuFulb0",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum sit amet dui ut dapibus. Nunc at euismod augue. Curabitur sit amet eros quis nunc aliquam mattis. Vivamus sed risus vel nisl dignissim venenatis a et eros. Proin eget nisl quis magna dictum pellentesque in vel ligula. Etiam maximus maximus nisl at pretium. Proin volutpat elit et enim cursus, a convallis purus hendrerit. Vestibulum elementum blandit consectetur.",
     "donwloads": {
-      "xls": "linkdownload.com",
-      "doc": "linkdownload.com",
-      "ppt": "linkdownload.com",
-      "zip": "linkdownload.com"
+      "xls": {
+        "url": "http://linkdownload.com",
+        "name": "Spreadsheet.xls",
+        "color": "#c2f4ea"
+      },
+      "doc": {
+        "url": "http://linkdownload.com",
+        "name": "Document.doc",
+        "color": "#c2e6ff"
+      },
+      "ppt": {
+        "url": "http://linkdownload.com",
+        "name": "Presentation.ppt",
+        "color": "#fff8d0"
+      },
+      "zip": {
+        "url": "http://linkdownload.com",
+        "name": "Folder.zip",
+        "color": "#e8eef3"
+      }
     }
   }
 ]
