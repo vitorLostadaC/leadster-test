@@ -6,6 +6,8 @@ import { CardVideo } from "./components/CardVideo/CardVideo"
 import { Pagination } from "@/components/Pagination/Pagination"
 import { useState } from "react"
 import { CategorySchema } from "@/schemas/Category.schema"
+import { OrderValues, VideoParamsSchema } from "./VideosSection.schema"
+import { Chip } from "./components/Chip/Chip"
 
 const QUANTITY_ITEMS_PER_PAGE = 9
 const categoryOptionsFilter: CategorySchema[] = [
@@ -30,17 +32,6 @@ const categoryOptionsFilter: CategorySchema[] = [
     id: "paid_media"
   }
 ]
-
-const enum OrderValues {
-  Date = "date",
-  Alphabetical = "alphabetical"
-}
-
-interface VideoParamsSchema {
-  currentPage: number
-  currentCategory: string
-  currentOrder: OrderValues
-}
 
 export const VideosSection = () => {
   const [videoParams, setVideoParams] = useState<VideoParamsSchema>({
@@ -149,27 +140,5 @@ export const VideosSection = () => {
         />
       </div>
     </section>
-  )
-}
-
-export interface ChipPropsSchema {
-  name: string
-  id: string
-  onClick: (categoryId: string) => void
-  selected: boolean
-}
-
-export const Chip = ({ name, selected, onClick, id }: ChipPropsSchema) => {
-  return (
-    <button
-      className={`rounded-full border-[1px] border-solid px-3 py-[2px]  ${
-        selected
-          ? "border-primary-400 bg-primary-400 text-white"
-          : "border-gray-700 hover:border-primary-400 hover:text-primary-400"
-      }`}
-      onClick={() => onClick(id)}
-    >
-      {name}
-    </button>
   )
 }
