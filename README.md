@@ -51,3 +51,7 @@ Para simular uma api no json tem o campo thumbnail que esta sem um link valido, 
 5. Criação do CategorySchema
 
 Criei dessa maneira como um Schema, pensando que esses filtros podem ser dinamicos vindo do banco de dados
+
+6. Na seção de videos não terá uma tela para caso não tenha videos encontrados
+
+Ela não terá uma opção de video não encontrado por se tratar de uma landing page, então eu imagino que nunca qualquer categoria deva estar vazia
