@@ -4,5 +4,8 @@ export interface ModalPropsSchema {
   onClose: () => void
   open: boolean
   children?: ReactNode
-  contentClassName?: HTMLProps<HTMLElement>["className"]
+  /**
+   * className is applicated in div content
+   */
+  className?: HTMLProps<HTMLElement>["className"]
 }

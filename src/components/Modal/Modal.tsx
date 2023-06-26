@@ -6,7 +6,7 @@ export const Modal = ({
   onClose,
   open,
   children,
-  contentClassName
+  className
 }: ModalPropsSchema) => {
   useEffect(() => {
     if (open === true) document.body.style.overflow = "hidden"
@@ -33,15 +33,15 @@ export const Modal = ({
 
   return (
     <div
-      className="fixed bottom-0 left-0 right-0 top-0 z-20 flex items-center justify-center bg-blue-950/50"
+      className={`fixed bottom-0 left-0 right-0 top-0 z-20 flex items-center justify-center bg-blue-950/50 `}
       onClick={onClose}
     >
       <div
-        className="rounded-xl border-t-4 border-solid border-t-primary-400 bg-white py-2"
+        className={`rounded-xl border-t-4 border-solid border-t-primary-400 bg-white ${className}`}
         onClick={(e) => e.stopPropagation()}
       >
         <div
-          className="ml-auto mr-2  w-max cursor-pointer rounded-full p-1 transition-colors hover:bg-gray-100"
+          className="ml-auto mr-2 h-6 w-max cursor-pointer rounded-full p-1 transition-colors hover:bg-gray-100"
           onClick={onClose}
         >
           <X className="text-gray-500" size={20} />
