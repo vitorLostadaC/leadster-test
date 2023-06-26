@@ -1,6 +1,9 @@
 import { Modal } from "@/components/Modal/Modal"
 import { ModalPropsSchema } from "@/components/Modal/Modal.schema"
 import videosJSON from "../../data/videos.json"
+import { DownloadSchema } from "@/schemas/Video.schema"
+import { Tag } from "@/components/Tag/Tag"
+import { DownloadCloud } from "lucide-react"
 
 interface VideoModalContentPropsSchema
   extends Pick<ModalPropsSchema, "open" | "onClose"> {
@@ -13,8 +16,8 @@ export const VideoModal = ({
   videoId
 }: VideoModalContentPropsSchema) => {
   const currentVideo = videosJSON.find((video) => video.id === videoId)
+  const tags: DownloadSchema[] = Object.values(currentVideo?.donwloads ?? {})
 
-  console.log(currentVideo?.url)
   return (
     <Modal open={open} onClose={onClose} className="max-w-md">
       <h3 className="mx-auto mb-6 max-w-[250px] text-justify text-base font-bold leading-4">
@@ -33,6 +36,17 @@ export const VideoModal = ({
         <p className="h-28 overflow-auto ">{currentVideo?.description}</p>
         <h6 className="font-bold">Downloads</h6>
         <hr />
+        <div className="flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <Tag
+              key={tag.name}
+              Icon={DownloadCloud}
+              name={tag.name}
+              color={tag.color}
+              href={tag.url}
+            />
+          ))}
+        </div>
       </div>
     </Modal>
   )
