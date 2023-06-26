@@ -4,6 +4,7 @@ export interface VideoSchema {
   url: string
   description: string
   thumbnail: string
+  category: string
   donwloads: {
     xls?: string
     doc?: string
