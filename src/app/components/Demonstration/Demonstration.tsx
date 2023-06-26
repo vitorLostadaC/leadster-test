@@ -3,11 +3,13 @@ import comparativeCTA from "@/assets/comparativo_img_CTA.png"
 import stampRD from "@/assets/selo_RD.png"
 import noCard from "@/assets/no-card-dark.webp"
 import rating from "@/assets/rating.webp"
+import montainDecoration from "@/assets/montainDecoration.svg"
 
 export const DemonstrationSection = () => {
   return (
-    <section className="flex h-[600px] w-full items-center justify-center gap-10 bg-blue-100">
+    <section className="relative  z-10 flex h-[600px] w-full items-center justify-center gap-10 bg-blue-100">
       <Image src={comparativeCTA} alt="Comparativo" className="h-5/6 w-auto" />
+
       <div className="flex flex-col gap-3">
         <div>
           <h3 className="max-w-[405px] text-4xl">
@@ -35,6 +37,13 @@ export const DemonstrationSection = () => {
           <span className="font-bold">4.9/5 média de satisfação</span>{" "}
         </p>
       </div>
+
+      <Image
+        src={montainDecoration}
+        alt="decoração"
+        className="absolute bottom-0 left-0 -z-10 -translate-x-1/3 "
+      />
+      {/* <div className="abosulte h-80 w-80 rotate-45 bg-blue-200" /> */}
     </section>
   )
 }
