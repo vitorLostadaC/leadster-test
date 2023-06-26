@@ -67,3 +67,7 @@ Os cards do midia paga estão com seus nomes alterados para poder testar a orden
 9. Modal
 
 O modal por não ter muitas imagens para me basear e tentar achar um padrão, acabou que o componente não ficou muito opnativo com relação a padronização dos modais
+
+10. Tags
+
+Como eu só vi tagas para fazer downloads de algum arquivo criei o componente pensando nisso, como um link
