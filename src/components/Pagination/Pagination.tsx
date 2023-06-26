@@ -17,7 +17,7 @@ export function Pagination({
   onPageChange,
   quantityItemsPerPage
 }: PaginationPropsSchema) {
-  const lastPage = Math.floor(totalItems / quantityItemsPerPage)
+  const lastPage = Math.ceil(totalItems / quantityItemsPerPage)
 
   const previousPages =
     currentPage > 1
