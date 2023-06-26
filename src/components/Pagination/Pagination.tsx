@@ -38,7 +38,7 @@ export function Pagination({
       {currentPage > 1 + SIBLINGS_COUNT && (
         <>
           <PaginationItem selectPage={onPageChange} pageNumber={1} />
-          {currentPage > 2 + SIBLINGS_COUNT && <p> ...</p>}
+          {currentPage > 2 + SIBLINGS_COUNT && <p className="px-2"> ...</p>}
         </>
       )}
       {previousPages.length > 0 &&
@@ -64,7 +64,9 @@ export function Pagination({
         ))}
       {currentPage + SIBLINGS_COUNT < lastPage && (
         <>
-          {currentPage + 1 + SIBLINGS_COUNT < lastPage && <p> ...</p>}
+          {currentPage + 1 + SIBLINGS_COUNT < lastPage && (
+            <p className="px-2"> ...</p>
+          )}
           <PaginationItem selectPage={onPageChange} pageNumber={lastPage} />
         </>
       )}
