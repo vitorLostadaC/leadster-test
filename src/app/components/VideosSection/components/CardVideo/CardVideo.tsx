@@ -3,9 +3,12 @@ import fakeThumbanil from "@/assets/thumbnail.png"
 import playIcon from "@/assets/play-icon.svg"
 import Image from "next/image"
 
-export const CardVideo = ({ title, thumbnail }: CardVideoPropsSchema) => {
+export const CardVideo = ({ video, OnClick }: CardVideoPropsSchema) => {
   return (
-    <div className="group h-max max-w-xs overflow-hidden rounded-xl shadow-xl hover:cursor-pointer">
+    <div
+      className="group h-max max-w-xs overflow-hidden rounded-xl shadow-xl hover:cursor-pointer"
+      onClick={() => OnClick && OnClick(video)}
+    >
       <div className="relative">
         <Image src={fakeThumbanil} alt="title" className="w-full" />
         <div className="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center bg-primary-400/40 opacity-0 transition-all duration-300 ease-in group-hover:opacity-100">
@@ -13,7 +16,9 @@ export const CardVideo = ({ title, thumbnail }: CardVideoPropsSchema) => {
         </div>
       </div>
 
-      <h3 className="p-5 font-bold group-hover:text-primary-500">{title}</h3>
+      <h3 className="p-5 font-bold group-hover:text-primary-500">
+        {video.title}
+      </h3>
     </div>
   )
 }

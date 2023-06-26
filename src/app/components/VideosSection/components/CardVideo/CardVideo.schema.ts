@@ -1,4 +1,6 @@
+import { VideoSchema } from "@/schemas/Video.schema"
+
 export interface CardVideoPropsSchema {
-  thumbnail: string
-  title: string
+  video: VideoSchema
+  OnClick?: (video: VideoSchema) => void
 }
