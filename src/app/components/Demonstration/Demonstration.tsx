@@ -6,25 +6,32 @@ import rating from "@/assets/rating.webp"
 
 export const DemonstrationSection = () => {
   return (
-    <section className="flex w-full justify-between bg-blue-100">
-      <Image src={comparativeCTA} alt="Comparativo" />
-      <div>
-        <h2>
-          Pronto para triplicar sua{" "}
-          <span className="font-bold">Geração de Leads ?</span>
-        </h2>
-        <p>
-          Criação e ativação em <span className="font-bold">4 minutos</span>
-        </p>
-        <hr />
+    <section className="flex h-[600px] w-full items-center justify-center gap-10 bg-blue-100">
+      <Image src={comparativeCTA} alt="Comparativo" className="h-5/6 w-auto" />
+      <div className="flex flex-col gap-3">
         <div>
-          <button>Ver demonstração</button>
-          <Image src={stampRD} alt="Estampa" />
+          <h3 className="max-w-[405px] text-4xl">
+            Pronto para triplicar sua{" "}
+            <span className="font-bold">Geração de Leads ?</span>
+          </h3>
+          <p className="mt-2">
+            Criação e ativação em <span className="font-bold">4 minutos</span>
+          </p>
         </div>
-        <p>
+
+        <hr className="border-node h-[2px] bg-gray-400" />
+
+        <div className="flex items-center gap-4">
+          <button className="rounded-full bg-primary-400 px-5 py-3 text-white">
+            Ver demonstração
+          </button>
+          <Image src={stampRD} alt="Estampa" className="h-12 w-auto" />
+        </div>
+
+        <p className="flex items-center justify-center gap-1 text-xs">
           <Image src={noCard} alt="Sem necessidade de cartão" />
           <span className="font-bold">Não</span> é necessário Cartão de Crédito
-          | <Image src={rating} alt="Avaliações" />
+          | <Image src={rating} alt="Avaliações" className="h-3 w-auto" />
           <span className="font-bold">4.9/5 média de satisfação</span>{" "}
         </p>
       </div>
