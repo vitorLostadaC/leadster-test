@@ -110,19 +110,19 @@ export const Footer = () => {
       </section>
 
       {/* Links */}
-      <section className="flex w-full max-w-4xl justify-between xl:max-w-5xl">
+      <section className="flex w-full flex-wrap items-center justify-center gap-6  lg:max-w-4xl lg:justify-between xl:max-w-5xl">
         {groupsLinks.map((groupLink) => (
           <GroupLinks key={groupLink.groupName} {...groupLink} />
         ))}
 
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 text-center lg:text-left">
           <h6 className="font-bold">Siga as Leadster</h6>
-          <div className="flex gap-3">
+          <div className="flex justify-center gap-3 lg:justify-start">
             {socialMidias.map((socialMedia) => (
               <ActionIcon key={socialMedia.link} {...socialMedia} />
             ))}
           </div>
-          <div className="font-xs flex flex-col gap-1">
+          <div className="font-xs flex flex-col gap-1 ">
             {contacts.map((contact) => (
               <ContactText key={contact.title} {...contact} />
             ))}
@@ -133,7 +133,7 @@ export const Footer = () => {
       {/* Copyright */}
       <section className="w-full text-gray-400">
         <hr className="mb-6 w-full" />
-        <div className="mx-auto flex max-w-4xl items-center justify-between xl:max-w-5xl">
+        <div className="mx-auto flex items-center justify-between sm:flex-col md:max-w-2xl lg:max-w-4xl lg:flex-row xl:max-w-5xl">
           <p>
             Copyright © 2015 - 2022 Todos os direitos reservados |{" "}
             <a href="" className="text-cyan-500">

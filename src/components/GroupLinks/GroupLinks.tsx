@@ -6,9 +6,9 @@ import { GroupLinksPropsSchema } from "./GroupLinks.schema"
 export const GroupLinks = ({ groupName, links }: GroupLinksPropsSchema) => {
   return (
     <div>
-      <h6 className="font-bold">{groupName}</h6>
+      <h6 className="text-center font-bold lg:text-left">{groupName}</h6>
 
-      <div className="mt-6 flex flex-col gap-4 text-gray-400">
+      <div className="mt-6 flex flex-col items-center gap-4 text-gray-400 lg:items-start">
         {links.map((link) => (
           <a href={link.href} key={link.name}>
             {link.name}

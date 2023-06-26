@@ -27,7 +27,7 @@ export const DemonstrationSection = () => {
 
         <hr className="border-node h-[2px] bg-gray-400" />
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center justify-center gap-4 xl:justify-start">
           <button className="rounded-full bg-primary-400 px-7 py-3 text-white">
             Ver demonstração
           </button>
