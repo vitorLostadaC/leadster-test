@@ -8,7 +8,11 @@ import montainDecoration from "@/assets/montainDecoration.svg"
 export const DemonstrationSection = () => {
   return (
     <section className="relative  z-10 flex h-[600px] w-full items-center justify-center gap-10 bg-blue-100">
-      <Image src={comparativeCTA} alt="Comparativo" className="h-5/6 w-auto" />
+      <Image
+        src={comparativeCTA}
+        alt="Comparativo"
+        className="hidden h-5/6 w-auto xl:block"
+      />
 
       <div className="flex flex-col gap-3">
         <div>

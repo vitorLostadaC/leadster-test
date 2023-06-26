@@ -110,7 +110,7 @@ export const Footer = () => {
       </section>
 
       {/* Links */}
-      <section className="flex w-full max-w-5xl justify-between">
+      <section className="flex w-full max-w-4xl justify-between xl:max-w-5xl">
         {groupsLinks.map((groupLink) => (
           <GroupLinks key={groupLink.groupName} {...groupLink} />
         ))}
@@ -133,7 +133,7 @@ export const Footer = () => {
       {/* Copyright */}
       <section className="w-full text-gray-400">
         <hr className="mb-6 w-full" />
-        <div className="mx-auto flex max-w-5xl items-center justify-between">
+        <div className="mx-auto flex max-w-4xl items-center justify-between xl:max-w-5xl">
           <p>
             Copyright © 2015 - 2022 Todos os direitos reservados |{" "}
             <a href="" className="text-cyan-500">

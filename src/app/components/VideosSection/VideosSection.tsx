@@ -107,9 +107,9 @@ export const VideosSection = () => {
       )}
 
       <section className="mx-auto flex max-w-5xl flex-col gap-6 py-20">
-        <div className="flex justify-between">
+        <div className="flex flex-col items-center justify-between gap-3 xl:flex-row xl:items-start">
           {/* Chip */}
-          <div className="flex gap-3">
+          <div className="flex gap-3 ">
             {categoryOptionsFilter.map(({ id, name }) => (
               <Chip
                 key={id}
@@ -150,7 +150,7 @@ export const VideosSection = () => {
 
         <hr className="h-[2px] border-none bg-gray-200" />
         {/* Cards */}
-        <div className="grid min-h-[850px] max-w-5xl grid-cols-3 grid-rows-3 gap-5">
+        <div className="grid min-h-[850px] max-w-5xl grid-cols-2 grid-rows-2 place-items-center items-center gap-5 xl:grid-cols-3 xl:grid-rows-3">
           {videos.map((video) => (
             <CardVideo
               key={video.id}
