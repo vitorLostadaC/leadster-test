@@ -47,3 +47,7 @@ Foi feito dessa forma pensando em escalabilidade, onde pode-se querer adicionar 
 4. utilizar uma thumbanilFake
 
 Para simular uma api no json tem o campo thumbnail que esta sem um link valido, e para este projeto está sendo importado uma fake para ficar congruente com o mockup
+
+5. Criação do CategorySchema
+
+Criei dessa maneira como um Schema, pensando que esses filtros podem ser dinamicos vindo do banco de dados
