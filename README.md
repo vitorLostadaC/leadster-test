@@ -55,3 +55,11 @@ Criei dessa maneira como um Schema, pensando que esses filtros podem ser dinamic
 6. Na seção de videos não terá uma tela para caso não tenha videos encontrados
 
 Ela não terá uma opção de video não encontrado por se tratar de uma landing page, então eu imagino que nunca qualquer categoria deva estar vazia
+
+7. Ordenação e paginação via cliente
+
+Está sendo feito desta maneira apenas para podermos validar as funcionalidades já que não foi disponibilizado um backend para fazer essas operações
+
+8. Categoria de midia paga com nomes alterados
+
+Os cards do midia paga estão com seus nomes alterados para poder testar a ordenação.
