@@ -86,8 +86,9 @@ export const VideosSection = () => {
   const videos = videosSorted.slice(initialGetItems, endGetItems)
 
   return (
-    <section className="mx-auto max-w-5xl py-20">
+    <section className="mx-auto flex max-w-5xl flex-col gap-6 py-20">
       <div className="flex justify-between">
+        {/* Chip */}
         <div className="flex gap-3">
           {categoryOptionsFilter.map(({ id, name }) => (
             <Chip
@@ -105,8 +106,11 @@ export const VideosSection = () => {
             />
           ))}
         </div>
+        {/* Order */}
         <div>
-          <label htmlFor="order">Ordenar por</label>
+          <label className="mr-3" htmlFor="order">
+            Ordenar por
+          </label>
           <select
             id="order"
             className="rounded-lg border-[1px] border-solid border-gray-700 bg-transparent px-2 py-1 outline-none"
@@ -124,11 +128,16 @@ export const VideosSection = () => {
         </div>
       </div>
 
+      <hr className="h-[2px] border-none bg-gray-200" />
+      {/* Cards */}
       <div className="grid min-h-[850px] max-w-5xl grid-cols-3 gap-5">
         {videos.map(({ id, thumbnail, title }) => (
           <CardVideo key={id} title={title} thumbnail={thumbnail} />
         ))}
       </div>
+
+      <hr className="h-[2px] border-none bg-gray-200" />
+      {/* Pagination */}
       <div className="flex justify-center">
         <Pagination
           onPageChange={(page) =>
