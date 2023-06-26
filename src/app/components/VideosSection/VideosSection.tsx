@@ -1,6 +1,6 @@
 "use client"
 
-import { VideoSchema } from "@/schemas/video.schema"
+import { VideoSchema } from "@/schemas/Video.schema"
 import videosJSON from "./data/videos.json"
 import { CardVideo } from "./components/CardVideo/CardVideo"
 import { Pagination } from "@/components/Pagination/Pagination"
@@ -31,15 +31,47 @@ const categoryOptionsFilter: CategorySchema[] = [
   }
 ]
 
+const enum OrderValues {
+  Date = "date",
+  Alphabetical = "alphabetical"
+}
+
+interface VideoParamsSchema {
+  currentPage: number
+  currentCategory: string
+  currentOrder: OrderValues
+}
+
 export const VideosSection = () => {
-  const [videoParams, setVideoParams] = useState({
+  const [videoParams, setVideoParams] = useState<VideoParamsSchema>({
     currentPage: 1,
-    currentCategory: categoryOptionsFilter[0].id
+    currentCategory: categoryOptionsFilter[0].id,
+    currentOrder: OrderValues.Date
   })
+
+  const handleOrder = (a: VideoSchema, b: VideoSchema): number => {
+    switch (videoParams.currentOrder) {
+      case OrderValues.Date:
+        const dateA = new Date(a.createdAt)
+        const dateB = new Date(b.createdAt)
+
+        if (dateA < dateB) {
+          return -1
+        } else if (dateA > dateB) {
+          return 1
+        } else {
+          return 0
+        }
+      case OrderValues.Alphabetical:
+        return a.title.localeCompare(b.title)
+    }
+  }
 
   const videosFiltred: VideoSchema[] = videosJSON.filter(
     (video) => video.category === videoParams.currentCategory
   )
+
+  const videosSorted: VideoSchema[] = videosFiltred.sort(handleOrder)
 
   /**
    * first page
@@ -51,24 +83,45 @@ export const VideosSection = () => {
     QUANTITY_ITEMS_PER_PAGE * videoParams.currentPage - QUANTITY_ITEMS_PER_PAGE
   const endGetItems = QUANTITY_ITEMS_PER_PAGE * videoParams.currentPage
 
-  const videos = videosFiltred.slice(initialGetItems, endGetItems)
-
-  console.log(videosFiltred.length)
+  const videos = videosSorted.slice(initialGetItems, endGetItems)
 
   return (
-    <section className="mx-auto max-w-5xl">
-      <div className="flex">
-        {categoryOptionsFilter.map(({ id, name }) => (
-          <Chip
-            key={id}
-            id={id}
-            name={name}
-            onClick={(categoryId) =>
-              setVideoParams({ currentPage: 1, currentCategory: categoryId })
+    <section className="mx-auto max-w-5xl py-20">
+      <div className="flex justify-between">
+        <div className="flex gap-3">
+          {categoryOptionsFilter.map(({ id, name }) => (
+            <Chip
+              key={id}
+              id={id}
+              name={name}
+              onClick={(categoryId) =>
+                setVideoParams({
+                  ...videoParams,
+                  currentPage: 1,
+                  currentCategory: categoryId
+                })
+              }
+              selected={videoParams.currentCategory === id}
+            />
+          ))}
+        </div>
+        <div>
+          <label htmlFor="order">Ordenar por</label>
+          <select
+            id="order"
+            className="rounded-lg border-[1px] border-solid border-gray-700 bg-transparent px-2 py-1 outline-none"
+            value={videoParams.currentOrder}
+            onChange={(e) =>
+              setVideoParams({
+                ...videoParams,
+                currentOrder: e.target.value as OrderValues
+              })
             }
-            selected={videoParams.currentCategory === id}
-          />
-        ))}
+          >
+            <option value={OrderValues.Date}>Data de Publicação</option>
+            <option value={OrderValues.Alphabetical}>Ordem Alfabética</option>
+          </select>
+        </div>
       </div>
 
       <div className="grid min-h-[850px] max-w-5xl grid-cols-3 gap-5">
@@ -81,7 +134,7 @@ export const VideosSection = () => {
           onPageChange={(page) =>
             setVideoParams({ ...videoParams, currentPage: page })
           }
-          totalItems={videosFiltred.length}
+          totalItems={videosSorted.length}
           currentPage={videoParams.currentPage}
           quantityItemsPerPage={QUANTITY_ITEMS_PER_PAGE}
         />
@@ -102,8 +155,8 @@ export const Chip = ({ name, selected, onClick, id }: ChipPropsSchema) => {
     <button
       className={`rounded-full border-[1px] border-solid px-3 py-[2px]  ${
         selected
-          ? "bg-primary-400 text-white"
-          : "hover:border-primary-400z border-gray-700 hover:text-primary-400"
+          ? "border-primary-400 bg-primary-400 text-white"
+          : "border-gray-700 hover:border-primary-400 hover:text-primary-400"
       }`}
       onClick={() => onClick(id)}
     >
