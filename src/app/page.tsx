@@ -1,3 +1,4 @@
+import { DemonstrationSection } from "./components/Demonstration/Demonstration"
 import { SloganSection } from "./components/SloganSection/SloganSection"
 import { VideosSection } from "./components/VideosSection/VideosSection"
 
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <SloganSection />
       <VideosSection />
+      <DemonstrationSection />
     </main>
   )
 }
