@@ -19,7 +19,7 @@ export const VideoModal = ({
   const tags: DownloadSchema[] = Object.values(currentVideo?.donwloads ?? {})
 
   return (
-    <Modal open={open} onClose={onClose} className="max-w-md">
+    <Modal open={open} onClose={onClose} className="sm:max-w-md">
       <h3 className="mx-auto mb-6 max-w-[250px] text-justify text-base font-bold leading-4">
         <span className="text-primary-400">Webinar: </span>{" "}
         {currentVideo?.title}
@@ -30,22 +30,28 @@ export const VideoModal = ({
         title={currentVideo?.title}
       ></iframe>
 
-      <div className="flex flex-col gap-2 p-5 text-sm">
-        <h6 className="font-bold">Descrição</h6>
-        <hr />
-        <p className="h-28 overflow-auto ">{currentVideo?.description}</p>
-        <h6 className="font-bold">Downloads</h6>
-        <hr />
-        <div className="flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <Tag
-              key={tag.name}
-              Icon={DownloadCloud}
-              name={tag.name}
-              color={tag.color}
-              href={tag.url}
-            />
-          ))}
+      <div className="flex h-1/2 flex-col justify-between p-5 text-sm  sm:justify-start">
+        <div className="flex flex-col gap-2">
+          <h6 className="font-bold">Descrição</h6>
+          <hr />
+          <p className="h-36 overflow-auto sm:h-28 ">
+            {currentVideo?.description}
+          </p>
+        </div>
+        <div className="flex flex-col gap-2">
+          <h6 className="mt-auto font-bold">Downloads</h6>
+          <hr />
+          <div className="flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <Tag
+                key={tag.name}
+                Icon={DownloadCloud}
+                name={tag.name}
+                color={tag.color}
+                href={tag.url}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </Modal>

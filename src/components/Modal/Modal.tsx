@@ -37,7 +37,7 @@ export const Modal = ({
       onClick={onClose}
     >
       <div
-        className={`rounded-xl border-t-4 border-solid border-t-primary-400 bg-white ${className}`}
+        className={`h-full w-full border-t-4 border-solid border-t-primary-400 bg-white sm:h-max sm:w-max sm:rounded-xl  ${className}`}
         onClick={(e) => e.stopPropagation()}
       >
         <div
