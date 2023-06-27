@@ -78,6 +78,8 @@ A menor resolução que esta landing visa comportar é 360 x 800
 
 [referencia](https://www.robsonmoulin.com.br/artigos/user-experience/resolucoes-de-tela-mais-usadas-em-2022/)
 
+### Falta Fazer
+
 - [ ] Skeleton animation on modal
 - [ ] Animation on open and close modal
 - [ ] Testes de Fluxo e testes Unitários
