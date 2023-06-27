@@ -108,9 +108,8 @@ export const Footer = () => {
         <Image src={leaderlogo} alt="Leader logo" className="" />
         <p className="mt-1 text-xs">Transformando visitantes em clientes.</p>
       </section>
-
       {/* Links */}
-      <section className="flex w-full flex-wrap items-center justify-center gap-6  lg:max-w-4xl lg:justify-between xl:max-w-5xl">
+      <section className="flex w-full max-w-[300px] flex-wrap items-center justify-center gap-6 sm:max-w-lg lg:max-w-4xl lg:justify-between xl:max-w-5xl">
         {groupsLinks.map((groupLink) => (
           <GroupLinks key={groupLink.groupName} {...groupLink} />
         ))}
@@ -129,11 +128,10 @@ export const Footer = () => {
           </div>
         </div>
       </section>
-
       {/* Copyright */}
       <section className="w-full text-gray-400">
         <hr className="mb-6 w-full" />
-        <div className="mx-auto flex items-center justify-between sm:flex-col md:max-w-2xl lg:max-w-4xl lg:flex-row xl:max-w-5xl">
+        <div className="mx-auto flex max-w-xs flex-col items-center justify-between text-center md:max-w-2xl lg:max-w-4xl lg:flex-row xl:max-w-5xl">
           <p>
             Copyright © 2015 - 2022 Todos os direitos reservados |{" "}
             <a href="" className="text-cyan-500">
