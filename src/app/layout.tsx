@@ -2,6 +2,7 @@ import { Header } from "@/layout/Header/Header"
 import "./globals.css"
 import { Plus_Jakarta_Sans as PlusJakartaSans } from "next/font/google"
 import { Footer } from "@/layout/Footer/Footer"
+import { Analytics } from "@vercel/analytics/react"
 
 const plusJakartaSans = PlusJakartaSans({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   )
