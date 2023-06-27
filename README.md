@@ -72,6 +72,13 @@ O modal por não ter muitas imagens para me basear e tentar achar um padrão, ac
 
 Como eu só vi tagas para fazer downloads de algum arquivo criei o componente pensando nisso, como um link
 
+11. Responsividade
+
+A menor resolução que esta landing visa comportar é 360 x 800
+
+[referencia](https://www.robsonmoulin.com.br/artigos/user-experience/resolucoes-de-tela-mais-usadas-em-2022/)
+
 - [ ] Skeleton animation on modal
 - [ ] Animation on open and close modal
 - [ ] Testes de Fluxo e testes Unitários
+- [ ] Animação quando entra os videos
