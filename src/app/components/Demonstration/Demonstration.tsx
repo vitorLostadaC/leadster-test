@@ -14,9 +14,9 @@ export const DemonstrationSection = () => {
         className="hidden h-5/6 w-auto xl:block"
       />
 
-      <div className="flex max-w-xs flex-col gap-3">
+      <div className="flex max-w-xs flex-col gap-3 sm:max-w-full">
         <div>
-          <h3 className="max-w-[405px] text-xl sm:text-4xl">
+          <h3 className="max-w-[405px] text-xl  sm:text-4xl">
             Pronto para triplicar sua{" "}
             <span className="font-bold">Geração de Leads ?</span>
           </h3>
@@ -34,11 +34,17 @@ export const DemonstrationSection = () => {
           <Image src={stampRD} alt="Estampa" className="h-12 w-auto" />
         </div>
 
-        <p className="flex items-center justify-center gap-1 text-xs ">
-          <Image src={noCard} alt="Sem necessidade de cartão" />
-          <span className="font-bold">Não</span> é necessário Cartão de Crédito
-          | <Image src={rating} alt="Avaliações" className="h-3 w-auto" />
-          <span className="font-bold">4.9/5 média de satisfação</span>{" "}
+        <p className="flex flex-col items-center justify-center gap-1 text-xs sm:flex-row">
+          <span className="flex gap-2">
+            <Image src={noCard} alt="Sem necessidade de cartão" />
+            <span className="font-bold">Não</span> é necessário Cartão de
+            Crédito
+          </span>
+          <span className="hidden sm:inline">|</span>
+          <span className="flex gap-2">
+            <Image src={rating} alt="Avaliações" className="h-3 w-auto" />
+            <span className="font-bold">4.9/5 média de satisfação</span>{" "}
+          </span>
         </p>
       </div>
 
