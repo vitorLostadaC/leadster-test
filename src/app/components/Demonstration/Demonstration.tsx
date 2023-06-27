@@ -14,13 +14,13 @@ export const DemonstrationSection = () => {
         className="hidden h-5/6 w-auto xl:block"
       />
 
-      <div className="flex flex-col gap-3">
+      <div className="flex max-w-xs flex-col gap-3">
         <div>
-          <h3 className="max-w-[405px] text-xl md:text-4xl">
+          <h3 className="max-w-[405px] text-xl sm:text-4xl">
             Pronto para triplicar sua{" "}
             <span className="font-bold">Geração de Leads ?</span>
           </h3>
-          <p className="mt-2 text-xs sm:text-base">
+          <p className="texzt-xs mt-2 sm:text-base">
             Criação e ativação em <span className="font-bold">4 minutos</span>
           </p>
         </div>
@@ -28,13 +28,13 @@ export const DemonstrationSection = () => {
         <hr className="border-node h-[2px] bg-gray-400 " />
 
         <div className="flex items-center justify-center gap-4 xl:justify-start">
-          <button className="rounded-full bg-primary-400 px-7 py-3 text-white">
+          <button className="rounded-full bg-primary-400 px-3 py-3 text-white sm:px-7 sm:py-3">
             Ver demonstração
           </button>
           <Image src={stampRD} alt="Estampa" className="h-12 w-auto" />
         </div>
 
-        <p className="flex items-center justify-center gap-1 text-xs">
+        <p className="flex items-center justify-center gap-1 text-xs ">
           <Image src={noCard} alt="Sem necessidade de cartão" />
           <span className="font-bold">Não</span> é necessário Cartão de Crédito
           | <Image src={rating} alt="Avaliações" className="h-3 w-auto" />

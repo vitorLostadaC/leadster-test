@@ -6,7 +6,7 @@ import Image from "next/image"
 export const CardVideo = ({ video, OnClick }: CardVideoPropsSchema) => {
   return (
     <div
-      className="group h-max overflow-hidden rounded-xl shadow-xl hover:cursor-pointer lg:max-w-xs xl:max-w-sm"
+      className="group h-max max-w-[300px] overflow-hidden rounded-xl shadow-xl hover:cursor-pointer lg:max-w-xs xl:max-w-sm"
       onClick={() => OnClick && OnClick(video)}
     >
       <div className="relative">

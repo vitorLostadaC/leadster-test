@@ -106,7 +106,7 @@ export const VideosSection = () => {
         />
       )}
 
-      <section className="mx-auto flex flex-col gap-6 py-20 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
+      <section className="mx-auto flex max-w-[300px] flex-col gap-6 py-20 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
         <div className="flex flex-col items-center justify-between gap-10 md:gap-3 xl:flex-row xl:items-start">
           {/* Chip */}
           <div className="flex flex-col gap-3 md:flex-row">
