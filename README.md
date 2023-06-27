@@ -1,5 +1,7 @@
 # Teste técnico Leadster
 
+**Link do projeto**: https://leadster-test-five.vercel.app/
+
 ## Iniciando projeto
 
 baixe as dependências
@@ -79,6 +81,10 @@ Como eu só vi tags para fazer downloads de algum arquivo criei o componente pen
 A menor resolução que está landing visa comportar é 360 x 800
 
 [referencia](https://www.robsonmoulin.com.br/artigos/user-experience/resolucoes-de-tela-mais-usadas-em-2022/)
+
+12. Tempo
+
+Por questão do tempo que tive disponivel (16horas), foquei em fazer um código escalavel, bem componentizado e de facil manutenção. Alguns detalhes que eu estava planejando fazer e não deu para ser realizado estão abaixo.
 
 ## Faltou Fazer
 
