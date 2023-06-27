@@ -44,7 +44,7 @@ Normalmente quando vou realizar a construção de uam página responsiva utilizo
 
 Foi feito dessa forma pensando em escalabilidade, onde pode-se querer adicionar mais uma página a landing page e os componentes de header e footer iriam acompanhar as novas páginas.
 
-4. utilizar uma thumbanilFake
+4. utilizar uma thumbanailFake
 
 Para simular uma api no json tem o campo thumbnail que esta sem um link valido, e para este projeto está sendo importado uma fake para ficar congruente com o mockup
 
@@ -71,3 +71,7 @@ O modal por não ter muitas imagens para me basear e tentar achar um padrão, ac
 10. Tags
 
 Como eu só vi tagas para fazer downloads de algum arquivo criei o componente pensando nisso, como um link
+
+- [ ] Skeleton animation on modal
+- [ ] Animation on open and close modal
+- [ ] Testes de Fluxo e testes Unitários
