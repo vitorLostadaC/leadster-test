@@ -1,3 +1,5 @@
+# Teste técnico Leadster
+
 ## Iniciando projeto
 
 baixe as dependências
@@ -78,9 +80,51 @@ A menor resolução que está landing visa comportar é 360 x 800
 
 [referencia](https://www.robsonmoulin.com.br/artigos/user-experience/resolucoes-de-tela-mais-usadas-em-2022/)
 
-### Falta Fazer
+## Faltou Fazer
 
 - [ ] Skeleton animation on modal
 - [ ] Animation on open and close modal
 - [ ] Testes de Fluxo e testes Unitários
 - [ ] Animação quando entra os vídeos
+
+## Estrutura de pastas
+
+### Assets - `📂 assets`
+
+Ele contém recursos do nosso projeto. Consiste em imagens e arquivos estáticos. Aqui podemos armazenar principalmente imagens globais.
+
+### Components - `📂 components`
+
+Essa pasta consiste em uma coleção de componentes de interface do usuário, como botões, modais, entradas, etc. Isso pode ser usado em vários arquivos do projeto.
+
+### Hooks - `📂 hooks`
+
+Essa pasta armazena os hooks globais usados ​​em várias páginas.
+
+### Layout - `📂 layout`
+
+Contém layouts disponíveis para todo o projeto como Menu, Cabeçalho, Footer, etc.
+
+### Schemas - `📂 schemas`
+
+Esta pasta armazena nossos esquemas/tipos globais. Disponível para todo o projeto.
+
+### Utils - `📂 utils`
+
+Esta pasta serve para armazenar todas as funções utilitárias, como formatadores e máscaras. Esta pasta é para funções puras que não têm efeitos colaterais.
+
+### All - `📂 pages and components`
+
+Todos as páginas e componentes podem tem pastas dentro de si caso necessário para organização de um escopo fechado que não é compartilhado com toda a aplicação
+
+```
+┣ 📂 pages
+ ┃ ┗ 📂 AuthPage
+ ┃ ┃ ┣ 📂 assets
+ ┃ ┃ ┣ 📂 components
+ ┃ ┃ ┣ 📂 schemas
+ ┃ ┃ ┣ 📂 hooks
+ ┃ ┃ ┣ 📂 schemas
+ ┃ ┃ ┣ 📂 utils
+ ┃ ┃ ┗ 📜 AuthPage.tsx
+```
