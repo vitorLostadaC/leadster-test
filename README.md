@@ -1,6 +1,6 @@
 ## Iniciando projeto
 
-baixe as dependencias
+baixe as dependências
 
 ```bash
 npm install
@@ -18,17 +18,17 @@ yarn dev
 pnpm dev
 ```
 
-## Desisões de projeto
+## Decisões de projeto
 
-1. Estilizacao
+1. Estilização
 
-Foi proposto utilizar styled-components mas vendo a documentação com o next 13, percenbi que ainda não está maduro o suficiente para utilizar criar as estilizacões utilizando SSR, apenas renderizando em `client side`.
+Foi proposto utilizar styled-components mas vendo a documentação com o next 13, percebi que ainda não está maduro o suficiente para utilizar criar as estilizações utilizando SSR, apenas renderizando em `client side`.
 
-Visto que a empresa Leadster é uma solução de marketing, acredito que um grande critério seja as landing pages terem um carregamento rápido, tendo em vista que alguns segundos de diferença geram grandes resultados no numero de vendas.
+Visto que a empresa Leadster é uma solução de marketing, acredito que um grande critério seja as landing pages terem um carregamento rápido, tendo em vista que alguns segundos de diferença geram grandes resultados no número de vendas.
 
-Claro que como é uma página simples com pouca estilização, acredito que não terá tanto impacto na performance mas mesmo assim preferi gerar com tailwind para ter a possibilidade de já deixar as páginas estaticas e ganhar alguns milésimos de segundos ou segundos no carregamento das páginas.
+Claro que como é uma página simples com pouca estilização, acredito que não terá tanto impacto na performance mas mesmo assim preferi gerar com tailwind para ter a possibilidade de já deixar as páginas estáticas e ganhar alguns milésimos de segundos ou segundos no carregamento das páginas.
 
-**Refêrencias das informacões**
+**Referências das informações**
 
 [next documentation](https://nextjs.org/docs/app/building-your-application/styling/css-in-js#styled-components)
 
@@ -52,29 +52,29 @@ Para simular uma api no json tem o campo thumbnail que esta sem um link valido, 
 
 Criei dessa maneira como um Schema, pensando que esses filtros podem ser dinamicos vindo do banco de dados
 
-6. Na seção de videos não terá uma tela para caso não tenha videos encontrados
+6. Na seção de vídeos não terá uma tela para caso não tenha vídeos encontrados
 
-Ela não terá uma opção de video não encontrado por se tratar de uma landing page, então eu imagino que nunca qualquer categoria deva estar vazia
+Ela não terá uma opção de vídeo não encontrado por se tratar de uma landing page, então eu imagino que nunca qualquer categoria deva estar vazia
 
 7. Ordenação e paginação via cliente
 
 Está sendo feito desta maneira apenas para podermos validar as funcionalidades já que não foi disponibilizado um backend para fazer essas operações
 
-8. Categoria de midia paga com nomes alterados
+8. Categoria de mídia paga com nomes alterados
 
-Os cards do midia paga estão com seus nomes alterados para poder testar a ordenação.
+Os cards do mídia paga estão com seus nomes alterados para poder testar a ordenação.
 
 9. Modal
 
-O modal por não ter muitas imagens para me basear e tentar achar um padrão, acabou que o componente não ficou muito opnativo com relação a padronização dos modais
+O modal por não ter muitas imagens para me basear e tentar achar um padrão, acabou que o componente não ficou muito opinativo com relação a padronização dos modais
 
 10. Tags
 
-Como eu só vi tagas para fazer downloads de algum arquivo criei o componente pensando nisso, como um link
+Como eu só vi tags para fazer downloads de algum arquivo criei o componente pensando nisso, como um link
 
 11. Responsividade
 
-A menor resolução que esta landing visa comportar é 360 x 800
+A menor resolução que está landing visa comportar é 360 x 800
 
 [referencia](https://www.robsonmoulin.com.br/artigos/user-experience/resolucoes-de-tela-mais-usadas-em-2022/)
 
@@ -83,4 +83,4 @@ A menor resolução que esta landing visa comportar é 360 x 800
 - [ ] Skeleton animation on modal
 - [ ] Animation on open and close modal
 - [ ] Testes de Fluxo e testes Unitários
-- [ ] Animação quando entra os videos
+- [ ] Animação quando entra os vídeos
